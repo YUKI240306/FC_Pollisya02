@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #024e15), 
+                url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Зелена смужка */
+.green-strip {
+    background: #038c2c; /* Яскраво-зелений */
+    height: 10px; /* Висота ≈ 1 см */
+    width: 100%; /* На всю ширину */
+}
+
+/* Хедер */
+header {
+    display: flex;
+    justify-content: space-between; /* Логотип зліва, меню в центрі, додатковий блок справа */
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background: transparent;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Меню */
+nav {
+    flex: 2;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header-right {
+    flex: 1; /* Займає 1 частину */
+    text-align: right;
+}
+
+.news {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.news article {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.news article img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+/* Футер */
+footer {
+    background: #024e15;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    margin-top: auto; /* Прижимає футер до низу */
+}
